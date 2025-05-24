@@ -1,0 +1,74 @@
+[
+  {
+    "id": "e30adb7e-c8d7-42b1-be6e-c2c52cbe248f",
+    "name": "Gaming PC Black",
+    "description": "<p>The Gaming PC Black is built for high-performance gaming and heavy multitasking. With powerful hardware, it's designed to handle the most demanding games and applications.</p><ul><li><strong>Processor:</strong> Latest generation high-speed processor for smooth gameplay.</li><li><strong>Graphics Card:</strong> Equipped with a top-tier graphics card for stunning visuals.</li><li><strong>Storage:</strong> High-capacity SSD for fast load times and ample storage.</li><li><strong>Design:</strong> Sleek black design with LED lighting for a modern look.</li></ul>",
+    "urlImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLrRARoQ1rcwujPhC9yEwQKkumXM5owimDbBrBrtEY5dpKHE1U93gAMcrRlfYGwUnfD1vMGn2D3NakvGvNjgJ2qGj2bJDsq3iw0gKAqxlA8mPrp-PyS7e2IXff7uE6ikh53DLOjPeU4aR2BNqRW-TcfVx3nzwUaYdh2keeqmlpv6Mt8vwcIDDxeOFfXl7H/s320/pc-gaming-2-removebg-preview.png",
+    "reviews": 700,
+    "price": 399.99,
+    "previousPrice": 0
+  },
+  {
+    "id": "33c21386-37f0-41c6-9ebb-4b8cc6ecf4b5",
+    "name": "Asus Vivobook 16",
+    "description": "<p>The Asus Vivobook 16 is a sleek and powerful laptop designed for everyday use, whether for work, study, or entertainment. With a high-resolution display, long-lasting battery, and a fast processor, it offers a smooth experience for all your tasks.</p><ul><li><strong>Processor:</strong> Latest Intel Core i5 for efficient multitasking.</li><li><strong>Display:</strong> 16-inch Full HD display for vibrant and sharp visuals.</li><li><strong>Storage:</strong> 512GB SSD for fast load times and ample storage space.</li><li><strong>Battery Life:</strong> Up to 10 hours on a single charge for all-day use.</li><li><strong>Design:</strong> Slim and lightweight for portability, available in a stylish silver finish.</li></ul>",
+    "urlImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_-PtmUc8rXXxR0OYDLfaJwSSIFgXVpyuqrBgzWwCDIwLNx1xA7xnOEUj4kDY5U4PGh6XL71GY3Ul72H1vRvGwEz-PsIuzS5Y_divSIzG_VBivUiVZFL1vea3rNkMRzeZy6cRasGC2NoUDvnKGWMToHVfSFPLAr1wnwANZWsFiGZGE9I8cP0YzKDsGbOoZ/s320/super-laptop.png",
+    "reviews": 599,
+    "price": 499,
+    "previousPrice": 0
+  },
+  {
+    "id": "175e4add-2323-4931-8b09-3dbfce9b97b4",
+    "name": "Smart TV 32 inches",
+    "description": "<p>The Smart TV 32 inches delivers an excellent viewing experience with its HD display and smart features. Designed for convenience, it connects seamlessly to your favorite streaming services and devices.</p><ul><li><strong>Display:</strong> 32-inch HD screen with vibrant colors and sharp visuals.</li><li><strong>Smart Features:</strong> Built-in apps for streaming, including Netflix, YouTube, and more.</li><li><strong>Connectivity:</strong> Multiple HDMI and USB ports for connecting external devices.</li><li><strong>Audio:</strong> Clear and immersive sound with built-in speakers.</li><li><strong>Design:</strong> Sleek, lightweight design that fits any room style.</li></ul>",
+    "urlImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxo-1lcng-156OcLBPc5lX5XWsoh7hGcp-hc2W5taNsmF9CeK5NsKPiW9xAQlSFBiEWrk05CAfwkrZFjDrkEOYoSoHgckcovlvcv9KoehCuhuKWdi-ackD6pCxbi2o9657nCrfI1WQFZxs5cGqSQNPU47AN_ol8I47MtcfE8b-_L3bhM3vyfCibH7APxoF/s320/smart-tv.png",
+    "reviews": 2500,
+    "price": 500,
+    "previousPrice": 699
+  },
+  {
+    "id": "47c2c4d2-3589-4a66-92c3-3e9eb9d2c236",
+    "name": "Gaming Headphones Wireless LG 7763",
+    "description": "<p>The Gaming Headphones Wireless LG 7763 offer an immersive sound experience with top-notch audio quality and wireless convenience. Perfect for gaming enthusiasts, they provide a comfortable fit and advanced features.</p><ul><li><strong>Sound Quality:</strong> High-definition audio with deep bass for an immersive gaming experience.</li><li><strong>Wireless Connectivity:</strong> Reliable Bluetooth connection with low latency.</li><li><strong>Battery Life:</strong> Up to 25 hours of continuous use on a full charge.</li><li><strong>Comfort:</strong> Ergonomic design with soft ear cushions for extended gaming sessions.</li><li><strong>Design:</strong> Stylish and durable build with RGB lighting for a gaming aesthetic.</li></ul>",
+    "urlImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBgl7ac2VAv_LEiM3RwzZz0bPxCBSwV0x2lfdN9EcpRyKiiW9XxoMdbIKisSU65Gd-JE_pTCFuGVwbC8l-yD-38LnHi2KyDaxIucwpEVJccV3H8HXZ-k8rzGhUIyCrfNfULRLIqejjbpj3CGFMSRn4LOVzZaIRl8E3U2S-qlZt_l_Ir68-80970kUYq8c6/s320/gaming-headphones.png",
+    "reviews": 400,
+    "price": 259,
+    "previousPrice": 0
+  },
+  {
+    "id": "8af65a2b-6743-4bf6-8c12-66b0f464aa09",
+    "name": "Asus ROG Gaming Laptop",
+    "description": "<p>The Asus ROG Gaming Laptop is designed for serious gamers and power users, delivering exceptional performance and cutting-edge technology. With its sleek design and advanced features, it’s the ultimate tool for gaming and productivity.</p><ul><li><strong>Processor:</strong> High-performance processor for seamless multitasking and gaming.</li><li><strong>Graphics Card:</strong> Dedicated top-tier GPU for stunning visuals and smooth gameplay.</li><li><strong>Display:</strong> High-refresh-rate display with vibrant colors and sharp resolution.</li><li><strong>Storage:</strong> Large SSD for fast load times and ample storage for games and files.</li><li><strong>Cooling System:</strong> Advanced cooling technology for sustained performance during intense gaming sessions.</li><li><strong>Design:</strong> Sleek and durable chassis with customizable RGB lighting.</li></ul>",
+    "urlImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2dMqxQAhq75yz5qYyLzGAtbtaZukjBpPmpok7UgqzBy42AxJScmcedDt26MfyB5-EVS9dBwr6pim3Pvv9xtSdFF1bmHysi_Xm3pdNelklN13UkL0FW2tIEy8VJvoFR6m9N9nqb-PbBiE074e6wMcPMis8iIOURn9rh0FBna0w4jO-HG3gmF2xp05yl6ZN/s320/asus-rog-removebg-preview.png",
+    "reviews": 679,
+    "price": 999,
+    "previousPrice": 1300
+  },
+  {
+    "id": "9d08b4b6-7e14-4296-abd6-5d1ae036b364",
+    "name": "PC Gaming Red Dragon",
+    "description": "<p>The PC Gaming Red Dragon is a powerhouse built for intense gaming sessions and high-performance multitasking. Its cutting-edge hardware and striking design make it a must-have for gamers.</p><ul><li><strong>Processor:</strong> High-speed multi-core processor for unmatched gaming performance.</li><li><strong>Graphics Card:</strong> Top-tier GPU for immersive visuals and smooth gameplay.</li><li><strong>Memory:</strong> Ample RAM to handle multiple applications and demanding games.</li><li><strong>Storage:</strong> SSD for lightning-fast load times and a spacious HDD for all your files.</li><li><strong>Cooling System:</strong> Advanced thermal management for optimal performance during long gaming marathons.</li><li><strong>Design:</strong> Bold Red Dragon theme with customizable RGB lighting.</li></ul>",
+    "urlImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYdMXU36lodYD9KVdcA0gxYrjI5xPN9Fl8OcV5j1nei1IIlZJmZJUnlw0DepvWPbktS78JtPjMyh5I69usSDDwoBSxq7ADEYDepsgxftlk6SPbO9pRw3WI9i21Gfl_um2qK7DLxqHUGH7DrAUg6YcyrqFYV7Z_kHfk7RN0q5S-PcILMguDcl8N_AsnFP4t/s320/pc-gaming-removebg-preview.png",
+    "reviews": 899,
+    "price": 499,
+    "previousPrice": 0
+  },
+  {
+    "id": "670bd278-7f11-4153-b959-114434b0e007",
+    "name": "AirPods Pro 4 2nd Edition",
+    "description": "<p>Experience unparalleled sound quality with the AirPods Pro 4 2nd Edition. Designed for audiophiles and casual listeners alike, these earbuds deliver exceptional performance and comfort.</p><ul><li><strong>Noise Cancellation:</strong> Advanced active noise cancellation for an immersive audio experience.</li><li><strong>Transparency Mode:</strong> Seamlessly switch to hear and interact with the world around you.</li><li><strong>Battery Life:</strong> Extended battery life with quick charge functionality for all-day use.</li><li><strong>Comfort Fit:</strong> Ergonomic design with multiple ear tip sizes for a secure and comfortable fit.</li><li><strong>Connectivity:</strong> Easy pairing and stable connection with all your devices.</li><li><strong>Water Resistance:</strong> Durable and sweat-resistant for workouts and outdoor activities.</li></ul>",
+    "urlImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBSBZxOaXPK2oDgsVQu65Z501xEaJG01DiX1DVck_KbnF9gOVJEHRG2cR61WnNNM_UKBmBbd0hf5Xn93gVB4urQhINSc6DhQnMwjUYMM00ccnpj-1TV5nIrb669iOzpBUwJ046wF8zoxT7vAq-Hqhm3MAzxMOb4MomGglrhNvoezzS_uSeoh8fCPgiArjb/s320/airpogs-removebg-preview.png",
+    "reviews": 678,
+    "price": 325,
+    "previousPrice": 500
+  },
+  {
+    "id": "12831a87-8959-4401-9143-e607a2b306ec",
+    "name": "Black Leaf Headphones",
+    "description": "<p>The Black Leaf Headphones provide an immersive audio experience with crystal clear sound and deep bass. Perfect for gaming, music, and calls, they offer a comfortable fit for extended use.</p><ul><li><strong>Sound Quality:</strong> High-definition audio with clear treble and deep bass.</li><li><strong>Comfort:</strong> Soft ear pads and adjustable headband for long-lasting comfort.</li><li><strong>Connectivity:</strong> Bluetooth for wireless freedom, with a reliable range.</li><li><strong>Design:</strong> Sleek black design with a modern touch.</li><li><strong>Battery Life:</strong> Up to 20 hours of continuous playback on a full charge.</li></ul>",
+    "urlImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoufr1xG1FC8_BUrEkhyLqiGz8FPxBi0zLgbLBuMLtu0v3e0dJJsQy2-PWhpaJ_LtMH9DrGBZqG0fWrgKLvA7QLHu9ifBJtp7p3vyPq_CruuCPJJpgFHeu-kLyH4DM84UaFUc0brkhrnGbtw2c9aLOISSvSXLiLW7B-Yqxc0CCEdlTtRyzyA0-cAxzlIaJ/s320/headp-removebg-preview.png",
+    "reviews": 1234,
+    "price": 125,
+    "previousPrice": 250
+  }
+]
