@@ -1,6 +1,6 @@
 <main class="p-6">
-  <section class="grid place-content-center lg:grid-cols-2 gap-4 lg:py-32">
-    <article class="flex flex-col max-w-xl mx-auto gap-2">
+  <section class="grid place-content-center lg:grid-cols-2 gap-4">
+    <article class="flex flex-col items-center justify-center max-w-xl mx-auto gap-2">
       <h1 class="text-gray-950 font-bold text-4xl sm:text-5xl lg:text-7xl">
         Shop Computer & Accesories
       </h1>
@@ -8,100 +8,68 @@
         Shop laptops, desktops, monitors, tablets, PC gaming, hard drives and
         storage, accesories and more.
       </p>
-      <a
-        role="button"
-        [routerLink]="['products']"
-        class="text-gray-700 rounded-md border border-gray-500 px-4 py-2 w-fit focus:ring-4 focus:ring-gray-200"
-      >
+      <a role="button" [routerLink]="['products']"
+        class="text-gray-700 rounded-md border border-gray-500 px-4 py-2 w-fit focus:ring-4 focus:ring-gray-200">
         View More
       </a>
     </article>
 
-   @defer {
-<article id="offers-carousel" class="mt-6 relative w-full" data-carousel="slide">
-  <!-- Carousel wrapper -->
-  <div class="relative h-56 sm:h-96 overflow-hidden flex items-center justify-center">
-    @for (productOffer of productsOffers; track $index) {
-      <div
-        class="duration-700 ease-in-out absolute inset-0 flex items-center justify-center"
-        [class.hidden]="$index !== 0"
-        data-carousel-item
-      >
-        <div class="sm:mt-24">
-          <app-product-offer [product]="productOffer" />
+    @defer {
+    <article id="offers-carousel" class="mt-6 relative w-full max-w-3xl mx-auto">
+      <div class="relative h-[400px] sm:h-[500px] overflow-hidden rounded-xl">
+        @for (productOffer of productsOffers; track $index) {
+        <div class="duration-700 ease-in-out absolute inset-0 transition-opacity"
+          [class.opacity-0]="currentSlide !== $index" [class.opacity-100]="currentSlide === $index">
+          <div class="w-full h-full">
+            <app-product-offer [product]="productOffer" />
+          </div>
         </div>
+        }
       </div>
-    }
-      </div>
-      <!-- Slider controls -->
-      <button
-        type="button"
-        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full sm:px-4 cursor-pointer group focus:outline-none"
-        data-carousel-prev
-      >
+
+      <button type="button"
+        class="absolute top-1/2 -translate-y-1/2 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        (click)="prevSlide()">
         <span
-          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-500 group-hover:bg-gray-400 group-focus:ring-4 group-focus:ring-gray-300 group-focus:outline-none"
-        >
-          <svg
-            class="w-4 h-4 text-white rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 1 1 5l4 4"
-            />
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/80 group-hover:bg-white group-focus:ring-4 group-focus:ring-white/50 group-focus:outline-none shadow-lg">
+          <svg class="w-4 h-4 text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 1 1 5l4 4" />
           </svg>
           <span class="sr-only">Previous</span>
         </span>
       </button>
-      <button
-        type="button"
-        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full sm:px-4 cursor-pointer group focus:outline-none"
-        data-carousel-next
-      >
+
+      <button type="button"
+        class="absolute top-1/2 -translate-y-1/2 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        (click)="nextSlide()">
         <span
-          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-500 group-hover:bg-gray-400 group-focus:ring-4 group-focus:ring-gray-300 group-focus:outline-none"
-        >
-          <svg
-            class="w-4 h-4 text-white rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m1 9 4-4-4-4"
-            />
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/80 group-hover:bg-white group-focus:ring-4 group-focus:ring-white/50 group-focus:outline-none shadow-lg">
+          <svg class="w-4 h-4 text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 9 4-4-4-4" />
           </svg>
           <span class="sr-only">Next</span>
         </span>
       </button>
+
+      <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+        @for (productOffer of productsOffers; track $index) {
+        <div class="w-3 h-3 rounded-full cursor-pointer"
+          [ngClass]="currentSlide === $index ? 'bg-white' : 'bg-white/50'" (click)="setSlide($index)"></div>
+        }
+      </div>
     </article>
     } @placeholder (minimum 200ms) {
     <div class="flex justify-center items-center">
-      <div
-        role="status"
-        class="flex-1 flex items-center justify-center h-56 max-w-sm bg-gray-300 rounded-lg animate-pulse w-full"
-      >
-        <svg
-          class="w-10 h-10 text-gray-200"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-        >
+      <div role="status"
+        class="flex-1 flex items-center justify-center h-56 max-w-sm bg-gray-300 rounded-lg animate-pulse w-full">
+        <svg class="w-10 h-10 text-gray-200" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512">
           <path
-            d="M0 96C0 60.7 28.7 32 64 32l384 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6l96 0 32 0 208 0c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
-          />
+            d="M0 96C0 60.7 28.7 32 64 32l384 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6l96 0 32 0 208 0c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
         </svg>
         <span class="sr-only">Loading...</span>
       </div>
@@ -112,9 +80,7 @@
     <h2 class="font-bold text-2xl sm:text-3xl text-center lg:text-4xl">
       Pick your favorite product
     </h2>
-    <article
-      class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center"
-    >
+    <article class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center">
       @defer { @for (product of products; track $index) {
       <app-home-product [product]="product" />
       } } @placeholder (minimum 200ms) {

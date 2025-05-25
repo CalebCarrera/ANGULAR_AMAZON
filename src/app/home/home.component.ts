@@ -8,36 +8,50 @@ import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HomeProductLoadingComponent } from './components/home-product-loading/home-product-loading.component';
 import { AfterViewInit } from '@angular/core';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  imports: [ProductOfferComponent, HomeProductComponent, RouterLink, HomeProductLoadingComponent, CommonModule],
+  imports: [
+    ProductOfferComponent, 
+    HomeProductComponent, 
+    RouterLink, 
+    HomeProductLoadingComponent, 
+    CommonModule,
+    NgClass
+  ],
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
   productsService = inject(ProductsService);
   products?: Product[];
-productsOffers: Product[] = [];
+  productsOffers: Product[] = [];
   private flowbiteInitialized = false;
-activeIndex: number = 0;
-
-nextSlide() {
-  this.activeIndex = (this.activeIndex + 1) % this.productsOffers.length;
-}
-
-prevSlide() {
-  this.activeIndex =
-    (this.activeIndex - 1 + this.productsOffers.length) % this.productsOffers.length;
-}
-
+  currentSlide = 0;
 
   ngOnInit(): void {
+    this.loadProducts();
+  }
+
+  loadProducts() {
     this.productsService.getAll().subscribe((products) => {
       this.products = products;
       this.productsOffers = this.products.filter(
         (product) => product.previousPrice
       );
     });
+  }
+
+  nextSlide() {
+    this.currentSlide = (this.currentSlide + 1) % this.productsOffers.length;
+  }
+
+  prevSlide() {
+    this.currentSlide = (this.currentSlide - 1 + this.productsOffers.length) % this.productsOffers.length;
+  }
+
+  setSlide(index: number) {
+    this.currentSlide = index;
   }
 
   ngAfterViewInit(): void {
